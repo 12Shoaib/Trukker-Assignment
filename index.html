@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Drivers</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="java-script/index.js"></script>
+    <link rel="stylesheet"  href="styles/index.css" />
 </head>
 <body>
-    
+    <header>
+        <div class="header-driver-content">
+            <h2>Drivers</h2>
+            <div class="wrapper-drop-down">
+                <div class="drop-down-style">
+                    <select class="drop-down-menu">
+                        <option>United Arab Emirates</option>
+                     </select>
+                    </div>    
+                    <div class="drop-down-style">
+                        <input 
+                            class="date-time-local" 
+                            type="datetime-local"
+                            value="2023-04-20T08:30"
+                            />
+                    </div>    
+            </div>
+            <h1>O</h1>
+        </div> 
+        <div class="header-driver-visuals">
+            <img src="" 
+            alt="data-image" 
+            class="driver-data-image" />
+            <div class="driver-info-content">
+                <p class="status">Active Drivers</p>
+                <p class="status">Inactive Drivers</p>
+                <p class="status">In-Process </p>
+                <p class="status">Rejected Drivers</p>
+            </div>
+            <div class="driver-adding-menu">
+                <button class="new-driver-button" onclick="navigate()">Add New Driver </button>
+                <p class="driver-count">Total Driver</p>
+            </div>
+        </div>
+    </header><!-- header end here -->
+    <main>
+        <nav class="navbar">
+                <p class="navbar-menu-option">Status</p>
+                <p class="navbar-menu-option">Moxey Id</p>
+                <p class="navbar-menu-option">Transporter</p>
+                <p class="navbar-menu-option">Driver name(EN)</p>
+                <p class="navbar-menu-option">Driver name(AR)</p>
+                <p class="navbar-menu-option">Mobile no</p>
+                <p class="navbar-menu-option">External Customer Id</p>
+                <p class="navbar-menu-option">Card No</p>
+                <p class="navbar-menu-option">Actions</p>
+        </nav>
+        
+    </main>
+
 </body>
 </html>

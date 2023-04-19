@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Driver Onboarding</title>
     <meta charset="UTF-8">
@@ -8,7 +9,39 @@
     <script src="java-script/driver-onboarding.js"></script>
     <link rel="stylesheet" href="styles/driver-onboarding.css" />
 </head>
+
 <body>
-    <h1 class="heading">Hello Iam on boearding form</h1>
+    <header>
+        <nav class="navbar">
+            <h2>Add New Driver</h2>
+        </nav>
+        <div class="header-content">
+            <div class="wrapper">
+                <label class="country-label">
+                    Country
+                    <span class="field-mark">*</span>
+                </label>
+                <div class="drop-down-style">
+                    <select class="drop-down-menu">
+                        <option>Select Country</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="buttton-wrapper">
+                <p class="user-type-label">user type</p>
+                    <input id="driver-type" type="radio" class="radio-button" value="Driver"/>
+                    <label class="label-driver" for="driver-type" >Driver</label>
+                    <input id="broker-type" type="radio" class="radio-button" value="Broker & Driver"/>
+                    <label class="label-driver" for="broker-type">Broker & Driver</label>
+            </div>
+        </div>
+    </header><!--Header ends here...  -->
+    <main>
+        
+
+    </main>
+    
 </body>
+
 </html>

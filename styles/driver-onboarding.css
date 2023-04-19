@@ -192,7 +192,6 @@ margin-left: .2rem;
 }
 .submit-button:active{
     background-color:#109887 ;
-
 }
 .button-container{
     float: right;
@@ -201,4 +200,7 @@ margin-left: .2rem;
     gap: 2rem;
     width: 20rem;
     display: flex;
+}
+.alert{
+    border: 0.01rem solid red;
 }

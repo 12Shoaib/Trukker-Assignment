@@ -39,15 +39,15 @@ margin-right: 1rem;
 .header-driver-visuals{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 6rem;
     margin-top:2rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 .driver-data-image{
-    min-width: 18rem;
-    min-height: 10rem;
-    border: 0.01rem solid red;
+    width: 22rem;
+    height: 10rem;
+    border: 0.01rem solid rgba(0, 0, 0, 0.461);
     border-radius: 8px;
 }
 .driver-info-content{

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Driver Onboarding</title>
     <meta charset="UTF-8">
@@ -30,18 +29,152 @@
 
             <div class="buttton-wrapper">
                 <p class="user-type-label">user type</p>
-                    <input id="driver-type" type="radio" class="radio-button" value="Driver"/>
-                    <label class="label-driver" for="driver-type" >Driver</label>
-                    <input id="broker-type" type="radio" class="radio-button" value="Broker & Driver"/>
-                    <label class="label-driver" for="broker-type">Broker & Driver</label>
+                <input id="driver-type" type="radio" class="radio-button" value="Driver" />
+                <label class="label-driver" for="driver-type">Driver</label>
+                <input id="broker-type" type="radio" class="radio-button" value="Broker & Driver" />
+                <label class="label-driver" for="broker-type">Broker & Driver</label>
             </div>
         </div>
     </header><!--Header ends here...  -->
     <main>
-        
+        <div class="heading-line"></div>
+            <p class="heading">personal details</p>
+    <form onsubmit="submitDetails(event)">
+            <div class="driver-details-container">
 
-    </main>
-    
+                <div class="image-container">
+                    <img src=""  class="image" />
+                </div>
+
+                <div class="driver-information">
+                        <div class="input-field-container">
+                            <label class="label"  for="f-name">first name
+                                <span class="field-mark">*</span>
+                            </label>
+                            <input type="text" class="input-field" id="f-name" />
+                        </div>
+                        <div class="input-field-container">
+                            <label class="label" for="m-name">middle name
+                                <span class="field-mark">*</span>
+                            </label>
+                            <input type="text" class="input-field" id="m-name" />
+                        </div>
+                         <div class="input-field-container">
+                            <label class="label" for="l-name">last name
+                                <span class="field-mark">*</span>
+                            </label>
+                            <input type="text" class="input-field" id="l-name" />
+                         </div>
+                        <div class="input-field-container">
+                            <label class="label" for="gender">gender
+                                <span class="field-mark">*</span>
+                            </label>
+                            <div class="drop-down-wrapper">
+                                <select id="gender" class="drop-down">
+                                    <option> Select</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-field-container">
+                            <label class="label" for="arabic-f-name">first name in arabic
+                            </label>
+                            <input type="text" class="input-field" id="arabic-f-name" />
+                         </div> 
+                        <div class="input-field-container">
+                            <label class="label" for="arabic-m-name">middle name in arabic
+                            </label>
+                            <input type="text" class="input-field" id="arabic-m-name" />
+                        </div>
+                        <div class="input-field-container">
+                            <label class="label" for="arabic-l-name">last name in arabic
+                            </label>
+                            <input type="text" class="input-field" id="arabic-l-name" />
+                        </div>
+
+                        <div class="input-field-container">   
+                            <label class="label" for="dob">date of birth 
+                            </label>
+                            <div class="drop-down-wrapper">
+                                <input id="dob" type="date" class="date" />        
+                            </div>
+                        </div>
+                        <div class="input-field-container">
+                            <label class="label" for="m-number">Mobile Number
+                                <span class="field-mark">*</span>
+                            </label>
+                            <input type="text" placeholder="+971" class="input-field" id="m-number" />
+                         </div>
+
+                         <div class="input-field-container">
+                            <label class="label" for="nationality">Nationality
+                                <span class="field-mark">*</span>
+                            </label>
+                            <input type="text"  class="input-field" id="nationality" />
+                         </div>
+
+                         <div class="input-field-container">
+                            <label class="label" for="country-o-b">Country of birth
+                                <span class="field-mark">*</span>
+                            </label>
+                            <input type="text"  class="input-field" id="country-o-b" />
+                         </div>
+
+                         <div class="input-field-container">
+                            <label class="label" for="city-o-b">city of birth
+                                <span class="field-mark">*</span>
+                            </label>
+                            <div class="drop-down-wrapper">
+                                <select id="city-o-b" class="drop-down">
+                                    <option> Select City</option>
+                                </select>
+                            </div>
+                         </div>
+                        
+                </div>
+            </div>  <!-- personal details end here... -->
+            
+        <div class="card-name-container">    
+            <label class="label" for="card-name">Name on the card
+                    <span class="field-mark">*</span>
+            </label>
+            <input type="text"  class="long-input" id="card-name" />
+        </div>
+            
+        <div class="heading-line"></div>
+            <p class="heading">Present Address</p>
+            <div class="driver-adress">
+                <div class="input-field-container">
+                    <label class="label" for="street">street name
+                        <span class="field-mark">*</span>
+                    </label>
+                    <input type="text"  class="input-field-street" id="street" />
+                </div>  
+                <div class="input-field-container">
+                    <label class="label" for="country">country
+                        <span class="field-mark">*</span>
+                    </label>
+                    <input type="text"  class="input-field" id="country" />
+                </div>  
+                <div class="input-field-container">
+                    <label class="label" for="city-town">city/town
+                        <span class="field-mark">*</span>
+                    </label>
+                    <input type="text"  class="input-field" id="city-town" />
+                </div>  
+                <div class="input-field-container">
+                    <label class="label" for="z-code">zipcode
+                        <span class="field-mark">*</span>
+                    </label>
+                    <input type="text"  class="input-field" id="z-code" />
+                </div>  
+            </div>
+        <div class="button-container">
+            <button class="cancel-button">cancel</button>
+            <button type="submit" class="submit-button">submit</button>
+        </div>    
+    </form>         <!--form tag ends here...  -->
+    </main> <!--main tag ends here...  -->
 </body>
 
 </html>

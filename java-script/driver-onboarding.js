@@ -6,7 +6,7 @@ const mandatoryField = ["f-name", "gender", "select-country", "m-name", "l-name"
 
 
 function submitDetails(event) {
-
+    console.log('clickde')
     event.preventDefault()
     validateAge()
     let firstName = document.getElementById("f-name")
@@ -39,12 +39,7 @@ function submitDetails(event) {
         dateOfBirth: dateOfBirth.value,
         mobileNumber: mobileNumber.value,
         nationality: nationality.value,
-        countryBirth: countryBirth.value,
-        cityBirth: cityBirth.value,
         nameCard: nameCard.value,
-        streetName: streetName.value,
-        country: country.value,
-        city: city.value,
         zipCode: zipCode.value,
         moxeyId: "MXUAE-DR" + Math.floor(Math.random() * 10000000),
         transporter: 'Trukker',
@@ -55,7 +50,6 @@ function submitDetails(event) {
     }
 
     if (validateInputFields()) {
-        const data = JSON.parse(localStorage.getItem("DriverDetails"))
         driversDetails = [newDriverData, ...driversDetails,]
         localStorage.setItem("DriverDetails", JSON.stringify(driversDetails))
         alert("Congratulations you have been added")
@@ -63,14 +57,11 @@ function submitDetails(event) {
     else {
         for (let i = 0; i < mandatoryField.length; i++) {
             const currentInputField = document.getElementById(mandatoryField[i])
-            const inputCapture = currentInputField.value
+            const inputCapture = currentInputField?.value
 
             if (inputCapture === "") {
                 currentInputField.classList.add('alert')
-                emptyFields = true
-            } else {
-                currentInputField.classList.remove('alert')
-            }
+            } 
         }
     }
 }
@@ -78,7 +69,7 @@ const validateInputFields = () => {
 
     for (let i = 0; i < mandatoryField.length; i++) {
         const currentInputField = document.getElementById(mandatoryField[i])
-        const inputCapture = currentInputField.value
+        const inputCapture = currentInputField?.value
         if (inputCapture === "") {
             return false
         } else {

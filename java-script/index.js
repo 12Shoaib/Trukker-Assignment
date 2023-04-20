@@ -9,15 +9,15 @@ const getDataFromLocal = () => {
     for (let i = 0; i < data.length; i++) {
         emitingData += `<table class="table">
         <tr>
-            <td> ${data[i].status}</td>
-            <td> ${data[i].moxeyId}</td>
-            <td>${data[i].transporter}</td>
-            <td> ${data[i].firstName}</td>
-            <td> ${data[i].fNameArabic}</td>
-            <td> ${data[i].mobileNumber}</td>
-            <td> ${data[i].customerId}</td>
-            <td> ${data[i].cardNo}</td>
-            <td> ${data[i].eye}</td>
+            <td> ${data[i]?.status}</td>
+            <td> ${data[i]?.moxeyId}</td>
+            <td>${data[i]?.transporter}</td>
+            <td> ${data[i]?.firstName}</td>
+            <td> ${data[i]?.fNameArabic}</td>
+            <td> ${data[i]?.mobileNumber}</td>
+            <td> ${data[i]?.customerId}</td>
+            <td> ${data[i]?.cardNo}</td>
+            <td> ${data[i]?.eye}</td>
         </tr>
         </table>`
     }

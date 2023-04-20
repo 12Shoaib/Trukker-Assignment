@@ -15,7 +15,7 @@
 }
 .drop-down-style{
     border: 0.01rem solid black;
-    width: 12rem;
+    width: 15rem;
     border-radius: 4px;
     height: 2rem;
     display: flex;
@@ -24,7 +24,7 @@
 .drop-down-menu{
     outline: none;
     border: 0px solid black;
-    width: 8rem;
+    width: 12rem;
     font-weight: 600;
 }
 .header-content{
@@ -129,6 +129,7 @@ margin-left: .2rem;
 .drop-down{
     outline: none;
     border: 0px solid black;
+    width: 9rem;
 }
 .date{
     outline: none;

@@ -5,8 +5,8 @@ const navigate = () => {
 const getDataFromLocal = () => {
     const data = JSON.parse(localStorage.getItem("DriverDetails"))
     const appendingDiv = document.getElementById('myDiv');
-    let emitingData  = ""
-    for(let i=0; i<data.length; i++){
+    let emitingData = ""
+    for (let i = 0; i < data.length; i++) {
         emitingData += `<table class="table">
         <tr>
             <td> ${data[i].status}</td>
@@ -24,7 +24,7 @@ const getDataFromLocal = () => {
     appendingDiv.innerHTML = emitingData
     inProcess()
 }
-setTimeout(getDataFromLocal , 1000)
+setTimeout(getDataFromLocal, 1000)
 
 const inProcess = () => {
     const data = JSON.parse(localStorage.getItem("DriverDetails"))

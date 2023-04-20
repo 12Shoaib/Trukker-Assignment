@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="java-script/driver-onboarding.js"></script>
     <link rel="stylesheet" href="styles/driver-onboarding.css" />
 </head>
 
@@ -15,14 +14,14 @@
             <h2>Add New Driver</h2>
         </nav>
         <div class="header-content">
-            <div class="wrapper">
-                <label for="select-country" class="country-label">
+            <div  class="wrapper">
+                <label  for="select-country" class="country-label">
                     Country
                     <span class="field-mark">*</span>
                 </label>
                 <div class="drop-down-style">
-                    <select id="select-country" class="drop-down-menu">
-                        <option>Select Country</option>
+                    <select class="drop-down-menu" id="myDropdown">
+                        <option  id="country-menu">Select Country</option> 
                     </select>
                 </div>
             </div>
@@ -117,7 +116,11 @@
                             <label class="label" for="country-o-b">Country of birth
                                 <span class="field-mark">*</span>
                             </label>
-                            <input type="text"  class="input-field" id="country-o-b" />
+                            <div class="drop-down-style">
+                                <select id="country-o-b" class="drop-down-menu">
+                                    <option id ="country-menu">Country of birth</option>
+                                </select>
+                            </div>
                          </div>
 
                          <div class="input-field-container">
@@ -151,16 +154,24 @@
                     <input type="text"  class="input-field-street" id="street" />
                 </div>  
                 <div class="input-field-container">
-                    <label class="label" for="country">country
+                    <label class="label" for="Present-country">country
                         <span class="field-mark">*</span>
                     </label>
-                    <input type="text"  class="input-field" id="country" />
+                    <div class="drop-down-wrapper">
+                        <select id="Present-country" class="drop-down">
+                            <option id="country-menu"> Select City</option>
+                        </select>
+                    </div>
                 </div>  
                 <div class="input-field-container">
-                    <label class="label" for="city-town">city/town
+                    <label class="label" for="town">city/town
                         <span class="field-mark">*</span>
                     </label>
-                    <input type="text"  class="input-field" id="city-town" />
+                    <div class="drop-down-wrapper">
+                        <select id="town" class="drop-down">
+                            <option> Select City</option>
+                        </select>
+                    </div>
                 </div>  
                 <div class="input-field-container">
                     <label class="label" for="z-code">zipcode
@@ -175,6 +186,9 @@
         </div>    
     </form>         <!--form tag ends here...  -->
     </main> <!--main tag ends here...  -->
+    
+    <script src="java-script/driver-onboarding.js"></script>
 </body>
+
 
 </html>

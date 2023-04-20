@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="java-script/index.js"></script>
-    <link rel="stylesheet"  href="styles/index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-UvVg+LEJcX9+8eHUMsJvUuxR6fIg6UO/6UzhJ6e+X9kpOyN63NrlzCJN6FLcgrxwF0Z2eaj29dTCfkaIHY5Gg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav class="navbar-header">
-            
+            <h2 class='heading'>Moxey</h2>
         </nav>
         <div class="header-driver-content">
             <h2>Drivers</h2>
@@ -29,17 +30,18 @@
                             />
                     </div>    
             </div>
-            <h1>O</h1>
+            <i class="fas fa-user"></i>
+            <i class="fa-solid fa-eye"></i>
         </div> 
         <div class="header-driver-visuals">
             <img src="https://res.cloudinary.com/dmm420bfv/image/upload/v1681943670/DriversData_e784s1.png" 
             alt="data-image" 
             class="driver-data-image" />
             <div class="driver-info-content">
-                <p class="status">Active Drivers</p>
-                <p class="status">Inactive Drivers</p>
-                <p class="status">In-Process </p>
-                <p class="status">Rejected Drivers</p>
+                <p class="status">Active Drivers<span class="count">00</span></p>
+                <p class="status">Inactive Drivers<span class="count">00</span></p>
+                <p class="status">In-Process<span id="c-i-p" class="count-in-process">00</span></p>
+                <p class="status">Rejected Drivers<span class="count">00</span></p>
             </div>
             <div class="driver-adding-menu">
                 <button class="new-driver-button" onclick="navigate()">Add New Driver </button>
@@ -48,18 +50,24 @@
         </div>
     </header><!-- header end here -->
     <main>
-        <nav class="navbar">
-                <p class="navbar-menu-option">Status</p>
-                <p class="navbar-menu-option">Moxey Id</p>
-                <p class="navbar-menu-option">Transporter</p>
-                <p class="navbar-menu-option">Driver name(EN)</p>
-                <p class="navbar-menu-option">Driver name(AR)</p>
-                <p class="navbar-menu-option">Mobile no</p>
-                <p class="navbar-menu-option">External Customer Id</p>
-                <p class="navbar-menu-option">Card No</p>
-                <p class="navbar-menu-option">Actions</p>
-        </nav>
-            
+        
+        <table class="table-head">
+            <tr>
+                <td >Status</td>
+                <td >Moxey Id</td>
+                <td >Transporter</td>
+                <td >Driver name(EN)</td>
+                <td >Driver name(AR)</td>
+                <td >Mobile no</td>
+                <td >External Customer Id</td>
+                <td >Card No</td>
+                <td >Actions</td>
+            </tr>
+        </table>
+
+            <div id="myDiv">
+            </div>
+
     </main>
 
 </body>

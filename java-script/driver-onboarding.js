@@ -8,7 +8,7 @@ const mandatoryField = ["f-name", "gender", "select-country", "m-name", "l-name"
 function submitDetails(event) {
     console.log('clickde')
     event.preventDefault()
-    validateAge()
+    
     let firstName = document.getElementById("f-name")
     let middleName = document.getElementById("m-name")
     let lastName = document.getElementById("l-name")
@@ -49,7 +49,7 @@ function submitDetails(event) {
         eye: "eye"
     }
 
-    if (validateInputFields()) {
+    if (validateInputFields() &&  validateAge() ) {
         driversDetails = [newDriverData, ...driversDetails,]
         localStorage.setItem("DriverDetails", JSON.stringify(driversDetails))
         alert("Congratulations you have been added")
@@ -87,6 +87,10 @@ const validateAge = () => {
 
     if (presentAge <= 18) {
         alert("Your age is less than 18")
+        return false
+    }
+    else{
+        return true
     }
 
 }

@@ -152,11 +152,11 @@ margin-left: .2rem;
     margin-left: 1rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2.5rem;
 }
 .input-field-street{
     height: 2rem;
-    width: 24rem;
+    width: 30rem;
     outline: none;   
 }
 .cancel-button{
